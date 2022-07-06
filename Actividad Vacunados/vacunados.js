@@ -41,14 +41,8 @@ function validar(){
                     document.getElementById('respuesta').innerHTML = 'Puedes vacunarte, perteneces al grupo de embarazadas con mas de 9 semanas de gestacion';
                 }
                 else{
-                    if(municipio == 'si'){
-                        console.log('Puedes vacunarte, perteneces al grupo que reside en municipio fronterizo del Norte del pais')
-                        document.getElementById('respuesta').innerHTML = 'Puedes vacunarte, perteneces al grupo que reside en municipio fronterizo del Norte del pais';
-                    }
-                    else{
-                        console.log('No puedes Vacunarte ya que no no eres mayo de 30 años ni perteneces a un municipio fronterizo del norte del pais')
-                        document.getElementById('respuesta').innerHTML = 'No puedes Vacunarte ya que no no eres mayo de 30 años ni perteneces a un municipio fronterizo del norte del pais';
-                    }
+                    console.log('No puedes vacunarte, debido al tiempo de gestacion de tu embarazo')
+                    document.getElementById('respuesta').innerHTML = 'No puedes vacunarte, debido al tiempo de gestacion de tu embarazo';
                 }
             }
             else{
