@@ -1,11 +1,7 @@
-//mayor de 18 años que residen en municipio fronterizo del norte del pais
-//Embarazadas con mas de 9 semanas de gestacion
-//personas que cumplen 30 años o mas en este año
-
 function validar(){
-    let edad = prompt('Cual es tu edad?');
+    let edad = Number(prompt('Cual es tu edad?'));
     let sexo = prompt('Cual es tu sexo? (M/F)');
-    let mesNac = prompt('Cual es tu mes de nacimiento? (1-12)');
+    let mesNac = Number(prompt('Cual es tu mes de nacimiento? (1-12)'));
     let municipio = prompt('Eres de un munipio fronterizo del Norte del pais?');
     let embarazada;
     let semanas;
