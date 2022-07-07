@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="prueba.js"></script>
+    <title>vacunados</title>
+</head>
+<body style="margin: 0; padding: 0;">
+    <div style="background-color:cornflowerblue; width: 100%; height: 100vh; display:flex; flex-direction: column; justify-content: center; align-items: center;">
+        <button style="margin: 20px; background-color: black; color: white;" onclick="document.getElementById('respuesta').innerHTML = divisorrecursivo(Number(prompt('Numero limite...')));">Saber si los numeros desde el 0 a un limite son divisibles entre 5</button>
+        <button style="margin: 20px; background-color: black; color: white;" onclick="document.getElementById('respuesta').innerHTML = imparesrecursivo(Number(prompt('Numero limite...')));">Saber numeros pares desde 0 hasta un limite</button>
+        <button style="margin: 20px; background-color: black; color: white;" onclick="document.getElementById('respuesta').innerHTML = rangorecursivo(Number(prompt('Limite inicial')), Number(prompt('Limite Final')), Number(prompt('Numero final de la lista')));">Mostrar numeros del 0 al 100, exceptuando un rango</button>
+        <p id="respuesta" style="font-weight: 600; background-color: antiquewhite;"></p>
+    </div>
+</body>
+</html>
