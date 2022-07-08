@@ -22,6 +22,7 @@ console.log(coleccion);
 //Ejercicio 3
 let informacion = [1, 4, 6, 10, 22, 55, 46, 2, 5, 0];
 
+informacion = informacion.sort(function(a, b){return a - b});
 for(let i = 0; i < 10; i++){
     console.log(i + 1 + ".- " + informacion[i])
 }
