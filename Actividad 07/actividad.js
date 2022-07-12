@@ -1,17 +1,17 @@
 //Ejercicio 1
-function buscar(a, b){
+let buscar = (a, b) => {
     if(a.includes(b)){
-        console.log("La oracion: '" + a + "', efectivamente contiene: '" + b)
+        console.log(`La oracion: ${a}, efectivamente contiene: ${b}`)
     }
     else{
-        console.log("Nel")
+        console.log(`La oracion: ${a}, no contiene contiene: ${b}`)
     }
 }
 
 buscar("Hola mundo", "Hola");
 
 //Ejercicio 2
-function sumaVector(a){
+let sumaVector = a => {
     let suma = 0;
     for(let i = 0; i < a.length; i++){
         suma += a[i];
@@ -22,7 +22,7 @@ function sumaVector(a){
 sumaVector([1,2,3,4,5]);
 
 //Ejercicio 3
-function palindromo(a){
+let palindromo = a => {
     let v = a.split("");
     let r = "";
 
@@ -38,11 +38,11 @@ function palindromo(a){
     }
 }
 
-palindromo("aga");
+palindromo("anitalavalatina");
 
 
 //Ejercicio 4
-function ocurrencias(a,b){
+let ocurrencias = (a,b) => {
     let v = a.split("");
     let cont = 0;
     
@@ -53,13 +53,12 @@ function ocurrencias(a,b){
     }
 
     console.log(cont);
-
 }
 
 ocurrencias("Esta es la actividad 7", "a");
 
 //Ejercicio 5
-function mayor(a){
+let mayor = a =>{
     let m = 0;
     for(let i = 0;i < a.length; i++){
         if(a[i] > m){
@@ -73,7 +72,7 @@ mayor([45,66,32,98,1000,5,23]);
 
 
 //Ejercicio 6
-function temperatura(c){
+let temperatura = c =>{
     let f = (c*9/5) + 32;
     console.log(f);
 }
