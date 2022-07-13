@@ -5,27 +5,26 @@ function multiply(a, b){
         return c;
     }
     if(!b){
-        b = dos(8);
+        b = prompt("Dame otro numero")
+        multiply(a, b);
     }
-    console.log(a * b);
+    else{
+        console.log(a * b);
+    }
 }
 
-multiply(2);
+multiply(2, 3);
 
 //Ejercicio 2
-function invocar(a, b){
-    function calculo(l, a, b){
-        let suma = a + b;
-        if(suma < l){
-            console.log(suma);
-            calculo(l, b, suma)
-        } 
-    }
-    
-    console.log(a);
-    console.log(b);
-    calculo(3000, a, b); //Los parametros definen un limite, y los  valores con los que iniciara
+
+function calculo(l, a, b){
+    let suma = a + b;
+    if(suma < l){
+        console.log(suma);
+        calculo(l, b, suma)
+    } 
 }
 
-invocar(0, 1);
-
+console.log(0);
+console.log(1);
+calculo(100000, 0, 1);
