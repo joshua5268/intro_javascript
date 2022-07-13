@@ -185,6 +185,27 @@ myObject.myNewProp = "Hello world" // This should throw an exception or error be
 It supposed to be filled using it's own function
 Add any type of element on the object.. arrays, objects, int, strings, etc*/
 
+let myObject = {
+    funcion: function llenado(a, b, c){
+        Object.defineProperties(this, {
+            "name" : {
+                value : a
+            },
+            "pet" : {
+                value : b
+            },
+            "age" : {
+                value : c
+            }
+        });
+    }
+}
+
+myObject.funcion("Juan", "Cat", 26);
+console.log(myObject.name);
+console.log(myObject.pet);
+console.log(myObject.age);
+
 
 
 /*var simpleExercise = [{a: 11, b:224, name: "M48 Bulldog"}, {a:23, b:56, name: "Object 140"}, {a: 32, b:75, name: "T57 Heavy"}];
@@ -194,3 +215,13 @@ y que retorne la suma de "a" y "b" de cada objeto y concatenarlo
 //     ["235 M48 Bulldog-=-79 Object 140-=-107 T57 Heavy" ]*/
 
 
+function funcion(a){
+    let name = "";
+    for(let i = 0; i < a.length; i++){
+        name += (a[i].a + a[i].b) + " " + a[i].name + " -=- ";
+    }
+    console.log(name);
+}
+
+simpleExercise = [{a: 11, b:224, name: "M48 Bulldog"}, {a:23, b:56, name: "Object 140"}, {a: 32, b:75, name: "T57 Heavy"}];
+funcion(simpleExercise);
