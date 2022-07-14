@@ -15,8 +15,8 @@
   test();
   ```
 
-> _your answer here_
-> _console answer_
+> _el primer consol imprime undefined, y el segundo imprime 2 por el retorno de foo()_
+> _undefined, 2_
 
 
 2. What is result?
@@ -36,8 +36,8 @@
   var firstResult = someFunction(9);
   var result = firstResult(2);
   ```
-> _your answer here_
-> _console answer_
+> _No imprime nada pero los valores de ambas variables es igual a 5._
+> _Undefined_
 
 
 3. What is the result of the following code? Explain your answer.
@@ -55,8 +55,8 @@
   var baz = foo();
   baz();
   ``` 
-> _your answer here_
-> _console answer_
+> _2, ya que la variable a esta declarada como var por lo cual es global_
+> _2_
 
 
 4. What will you see in the console for the following example?
@@ -70,5 +70,5 @@
   b(); 
   ```
 
-> _your answer here_
-> _console answer_
+> _No imprime nada_
+> _Undefined_
