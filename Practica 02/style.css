@@ -1,0 +1,29 @@
+.corto{
+    height: 50%;
+    min-height: 150px;
+}
+
+.largo{
+    height: 100%;
+    min-height: 300px;
+}
+
+.divIcono{
+    height: 70%;
+    text-align: center;
+    align-items: center;
+}
+
+.divIcono i{
+    font-size: 2rem;
+    color: white;
+}
+
+.divTexto{
+    height: 30%;
+    text-align: center;
+    align-items: end;
+    color: white;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
