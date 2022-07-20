@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buscador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    
+    <header class="bg-transformer bg-warning">
+        <div class="container">
+            <div class="row bg-secondary">
+                <div class="col-6 d-flex align-items-center">
+                    <h4 class="mb-0 h-100 text-white">Buscador JS</h4>
+                </div>
+                <div class="col-6">
+                    <nav>
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center pt-5">Buscador JS</h1>
+                    <div class="card my-5 p-3">
+                        <form id="form-busqueda">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="inputName">Nombre</label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="First name" aria-label="First name">
+                                    </div>
+                                    <div class="col">
+                                        <label for="inputModel">Modelo</label>
+                                        <select id="inputModel" class="form-select">
+                                            <option value selected>Choose...</option>
+                                            <option value="decepticon">Decepticon</option>
+                                            <option value="autobot">Autobot</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="inputMovie">Pelicula</label>
+                                        <select id="inputMovie" class="form-select">
+                                            <option value selected>Choose...</option>
+                                            <option value="1">Transformer 1</option>
+                                            <option value="2">Transformer 2</option>
+                                            <option value="3">Transformer 3</option>
+                                            <option value="4">Transformer 4</option>
+                                            <option value="5">Transformer 5</option>
+                                            <option value="6">Transformer 6</option>
+                                        </select>
+                                    </div>
+                                    <div class="col d-flex align-items-end">
+                                        <button type="submit" class="btn btn-success">Buscar</button>
+                                    </div>
+                              </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+
+    <main class="bg-dark text-white py-5">
+        <div class="container">
+            <div id="box-transformer" class="row row-cols-2">
+                <div class="col mb-3">
+                    <div class="card bg-secondary flex-row">
+                        <div class="w-50">
+                            <img src="cual.jpg" alt="" class="img-fluid object-fit">
+                        </div>
+                        <div class="card-body w-50">
+                            <h2 class="card-title">Optimus Prime</h2>
+                            <p>Optimus Prime</p>
+                            <p>Primera aparicion</p>
+                            <p>Descripcion</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatum provident est sunt voluptates quis inventore excepturi, porro iure sit, totam adipisci voluptatibus ipsa fugiat expedita. Hic exercitationem expedita labore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+  </body>
+</html>
