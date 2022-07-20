@@ -5,27 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Buscador</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
   <body>
     
-    <header class="bg-transformer bg-warning">
+    <header class="bg-transformer py-3">
         <div class="container">
-            <div class="row bg-secondary">
-                <div class="col-6 d-flex align-items-center">
-                    <h4 class="mb-0 h-100 text-white">Buscador JS</h4>
+            <div class="row bg-black">
+                <div class="col-6">
+                    <div class="d-flex align-items-center h-100">
+                        <h4 class="mb-0 text-white">Buscador Videojuegos</h4>
+                    </div>
                 </div>
+                
                 <div class="col-6">
                     <nav>
                         <ul class="nav justify-content-end">
                             <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Active</a>
+                            <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link text-white" href="#">Blog</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link text-white" href="#">Ayuda</a>
                             </li>
                         </ul>
                     </nav>
@@ -33,60 +36,93 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <h1 class="text-center pt-5">Buscador JS</h1>
-                    <div class="card my-5 p-3">
+                    <h1 class="text-center pt-2 text-danger">VIDEOJUEGOS</h1>
+                    <div class="card my-5 p-2 bg-primary bg-opacity-75 text-white">
                         <form id="form-busqueda">
                             <div class="row">
-                                <div class="col">
+                                    <div class="col">
                                     <label for="inputName">Nombre</label>
-                                    <input type="text" class="form-control" id="inputName" placeholder="First name" aria-label="First name">
+                                    <input type="text" class="form-control" id="inputName" placeholder="Nombre" aria-label="First name">
                                     </div>
                                     <div class="col">
-                                        <label for="inputModel">Modelo</label>
+                                        <label for="inputModel">Genero</label>
                                         <select id="inputModel" class="form-select">
-                                            <option value selected>Choose...</option>
-                                            <option value="decepticon">Decepticon</option>
-                                            <option value="autobot">Autobot</option>
+                                            <option value selected>Elije...</option>
+                                            <option value="Aventura">Aventura</option>
+                                            <option value="Peleas">Peleas</option>
+                                            <option value="Disparos">Disparos</option>
+                                            <option value="RPG">RPG</option>
+                                            <option value="Deportes">Deportes</option>
+                                            <option value="Plataformas">Plataformas</option>
                                         </select>
                                     </div>
                                     <div class="col">
-                                        <label for="inputMovie">Pelicula</label>
+                                        <label for="inputMovie">Año</label>
                                         <select id="inputMovie" class="form-select">
-                                            <option value selected>Choose...</option>
-                                            <option value="1">Transformer 1</option>
-                                            <option value="2">Transformer 2</option>
-                                            <option value="3">Transformer 3</option>
-                                            <option value="4">Transformer 4</option>
-                                            <option value="5">Transformer 5</option>
-                                            <option value="6">Transformer 6</option>
+                                            <option value selected>Elije...</option>
+                                            <option value="2015">2015</option>
+                                            <option value="2016">2016</option>
+                                            <option value="2017">2017</option>
+                                            <option value="2018">2018</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2022">2022</option>
                                         </select>
                                     </div>
                                     <div class="col d-flex align-items-end">
-                                        <button type="submit" class="btn btn-success">Buscar</button>
+                                        <button type="submit" class="btn btn-success w-100">Buscar</button>
                                     </div>
                               </div>
                         </form>
                     </div>
                 </div>
-            </div>
-            
+            </div>  
         </div>
     </header>
 
-    <main class="bg-dark text-white py-5">
+    <main class="bg-primary text-white py-5 bg-opacity-25">
         <div class="container">
-            <div id="box-transformer" class="row row-cols-2">
+            <div id="box-transformer" class="row row-cols-lg-2 row-cols-md-1">
                 <div class="col mb-3">
                     <div class="card bg-secondary flex-row">
                         <div class="w-50">
-                            <img src="cual.jpg" alt="" class="img-fluid object-fit">
+                            <img src="img/gow4.jpg" alt="" class="img-fluid object-fit">
                         </div>
                         <div class="card-body w-50">
-                            <h2 class="card-title">Optimus Prime</h2>
-                            <p>Optimus Prime</p>
-                            <p>Primera aparicion</p>
+                            <h2 class="card-title">God Of War</h2>
+                            <p>Genero: Aventura</p>
+                            <p>Año de Lanzamiento: 2018</p>
                             <p>Descripcion</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatum provident est sunt voluptates quis inventore excepturi, porro iure sit, totam adipisci voluptatibus ipsa fugiat expedita. Hic exercitationem expedita labore.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card bg-secondary flex-row">
+                        <div class="w-50">
+                            <img src="img/gears.jpg" alt="" class="img-fluid object-fit">
+                        </div>
+                        <div class="card-body w-50">
+                            <h2 class="card-title">Gears Of War 5</h2>
+                            <p>Genero: Disparos</p>
+                            <p>Año de Lanzamiento: 2019</p>
+                            <p>Descripcion</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card bg-secondary flex-row">
+                        <div class="w-50">
+                            <img src="img/mk11.jpg" alt="" class="img-fluid object-fit">
+                        </div>
+                        <div class="card-body w-50">
+                            <h2 class="card-title">Mortal Kombat 11</h2>
+                            <p>Genero: Peleas</p>
+                            <p>Año de Lanzamiento: 2019</p>
+                            <p>Descripcion</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                 </div>

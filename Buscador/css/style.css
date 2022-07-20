@@ -1,0 +1,8 @@
+.bg-transformer{
+    background-image: url(/Buscador/img/fondo.jpg);
+}
+
+.object-fit{
+    object-fit: cover;
+    height: 100%;
+}
