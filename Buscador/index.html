@@ -42,11 +42,11 @@
                             <div class="row">
                                     <div class="col">
                                     <label for="inputName">Nombre</label>
-                                    <input type="text" class="form-control" id="inputName" placeholder="Nombre" aria-label="First name">
+                                    <input type="text" class="form-control" id="inputName" placeholder="Nombre">
                                     </div>
                                     <div class="col">
-                                        <label for="inputModel">Genero</label>
-                                        <select id="inputModel" class="form-select">
+                                        <label for="inputGenero">Genero</label>
+                                        <select id="inputGenero" class="form-select">
                                             <option value selected>Elije...</option>
                                             <option value="Aventura">Aventura</option>
                                             <option value="Peleas">Peleas</option>
@@ -57,8 +57,8 @@
                                         </select>
                                     </div>
                                     <div class="col">
-                                        <label for="inputMovie">Año</label>
-                                        <select id="inputMovie" class="form-select">
+                                        <label for="inputYear">Año</label>
+                                        <select id="inputYear" class="form-select">
                                             <option value selected>Elije...</option>
                                             <option value="2015">2015</option>
                                             <option value="2016">2016</option>
@@ -83,52 +83,14 @@
 
     <main class="bg-primary text-white py-5 bg-opacity-25">
         <div class="container">
-            <div id="box-transformer" class="row row-cols-lg-2 row-cols-md-1">
-                <div class="col mb-3">
-                    <div class="card bg-secondary flex-row">
-                        <div class="w-50">
-                            <img src="img/gow4.jpg" alt="" class="img-fluid object-fit">
-                        </div>
-                        <div class="card-body w-50">
-                            <h2 class="card-title">God Of War</h2>
-                            <p>Genero: Aventura</p>
-                            <p>Año de Lanzamiento: 2018</p>
-                            <p>Descripcion</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3">
-                    <div class="card bg-secondary flex-row">
-                        <div class="w-50">
-                            <img src="img/gears.jpg" alt="" class="img-fluid object-fit">
-                        </div>
-                        <div class="card-body w-50">
-                            <h2 class="card-title">Gears Of War 5</h2>
-                            <p>Genero: Disparos</p>
-                            <p>Año de Lanzamiento: 2019</p>
-                            <p>Descripcion</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3">
-                    <div class="card bg-secondary flex-row">
-                        <div class="w-50">
-                            <img src="img/mk11.jpg" alt="" class="img-fluid object-fit">
-                        </div>
-                        <div class="card-body w-50">
-                            <h2 class="card-title">Mortal Kombat 11</h2>
-                            <p>Genero: Peleas</p>
-                            <p>Año de Lanzamiento: 2019</p>
-                            <p>Descripcion</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
+            <div id="box-juegos" class="row row-cols-lg-2 row-cols-md-1">
+                
             </div>
         </div>
     </main>
 
+    <script src="js/code.js"></script>
+    <script src="js/db.js"></script>
+
   </body>
-</html>
+</html> 
