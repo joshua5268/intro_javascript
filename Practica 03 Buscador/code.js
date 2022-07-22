@@ -1,6 +1,11 @@
 const inputBusqueda = document.querySelector("#inputBuscar");
 const btnBusqueda = document.querySelector("#btnBuscar");
 const boxSalas = document.querySelector("#boxSalas");
+const linkIkea = document.querySelector("#linkIkea");
+const linkMarcos = document.querySelector("#linkMarcos");
+const linkCaressa = document.querySelector("#linkCaressa");
+const linkLiddy = document.querySelector("#linkLiddy");
+const linkAll = document.querySelector("#linkAll");
 
 const datosBusqueda = {
     nombre: '',
@@ -35,17 +40,60 @@ function mostrarHTML(salas){
     });
 }
 
-btnBusqueda.addEventListener('click', (e) => {
+btnBusqueda.addEventListener('click', () => {
+    datosBusqueda.compania = '';
     datosBusqueda.nombre = inputBusqueda.value;
-
     filtrarSalas();
-
     inputBusqueda.value = '';
 });
 
-function filtrarSalas(){
-    const resultado = salas.filter(filtarNombre);
+linkAll.addEventListener('click', () => {
+    datosBusqueda.compania = '';
+    datosBusqueda.nombre = '';
+    filtrarSalas();
+    inputBusqueda.value = '';
+});
 
+linkIkea.addEventListener('click', () => {
+    datosBusqueda.nombre = '';
+    datosBusqueda.compania = 'Ikea';
+    filtrarSalas();
+    inputBusqueda.value = '';
+});
+
+linkMarcos.addEventListener('click', () => {
+    datosBusqueda.nombre = '';
+    datosBusqueda.compania = 'Marcos';
+    filtrarSalas();
+    inputBusqueda.value = '';
+});
+
+linkCaressa.addEventListener('click', () => {
+    datosBusqueda.nombre = '';
+    datosBusqueda.compania = 'Caressa';
+    filtrarSalas();
+    inputBusqueda.value = '';
+});
+
+linkLiddy.addEventListener('click', () => {
+    datosBusqueda.nombre = '';
+    datosBusqueda.compania = 'Liddy';
+    filtrarSalas();
+    inputBusqueda.value = '';
+});
+
+
+
+function filtrarSalas(){
+    let resultado = [];
+    if(datosBusqueda.nombre){
+        resultado = salas.filter(filtrarNombre);
+    }else if (datosBusqueda.compania){    
+        resultado = salas.filter(filtrarCompania);
+    }else{
+        resultado = salas;
+    }
+    
     limpiarHTML();
 
     if(resultado.length){
@@ -56,9 +104,14 @@ function filtrarSalas(){
     
 }
 
-function filtarNombre(sala){
+function filtrarNombre(sala){
     const {nombre} = datosBusqueda;
     return sala.nombre == nombre; 
+}
+
+function filtrarCompania(sala){
+    const {compania} = datosBusqueda;
+    return sala.compania == compania; 
 }
 
 function limpiarHTML(){
@@ -75,3 +128,5 @@ function sinResultado(){
 
     boxSalas.appendChild(cardSala);
 }
+  
+
